@@ -18,13 +18,13 @@ class RateLimitPolicy:
         user = request.user
 
         #  Login endpoint (sensitive)
-        if path.startswith("/login"):
+        if path.startswith("/login/"):
             if user.is_authenticated:
                 return 10, cls.DEFAULT_WINDOW
             return 5, cls.DEFAULT_WINDOW
 
         #  Search endpoint
-        if path.startswith("/search"):
+        if path.startswith("/search/"):
             if user.is_authenticated:
                 return 30, cls.DEFAULT_WINDOW
             return 10, cls.DEFAULT_WINDOW

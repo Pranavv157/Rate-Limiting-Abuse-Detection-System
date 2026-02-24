@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from .redis_client import redis_client
 from .policy import RateLimitPolicy
-
+from .abuse_engine import AbuseEngine
 
 class RateLimitMiddleware:
 
@@ -19,14 +19,12 @@ class RateLimitMiddleware:
                 redis_client.expire(key, window)
 
             if count > limit:
-                return JsonResponse(
-                    {
-                        "detail": "Rate limit exceeded",
-                        "limit": limit,
-                        "window_seconds": window,
-                    },
-                    status=429,
-                )
+                if count > limit:
+                    AbuseEngine.record_event(identity, "rate_limit_hit")
+                    return JsonResponse(
+                        {"detail": "Rate limit exceeded"},
+                        status=429,
+                    )
 
         except Exception:
             # FAIL-OPEN
