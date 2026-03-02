@@ -6,7 +6,7 @@ This project demonstrates how real-world systems go beyond simple rate limiting 
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Traditional rate limiting only restricts request volume but fails to detect malicious behavior that stays under limits.
 
@@ -132,3 +132,17 @@ TTL is used extensively to avoid manual cleanup.
 ## 📌 Summary
 
 This project demonstrates how modern backend systems combine rate limiting, behavioral analysis, and progressive enforcement to protect APIs safely and observably.
+
+Client
+  ↓
+Auth Middleware
+  ↓
+Cooldown Check
+  ↓
+Policy Decision
+  ↓
+Redis Counter
+  ↓
+Abuse Scoring
+  ↓
+View
