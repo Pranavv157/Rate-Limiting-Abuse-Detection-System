@@ -1,0 +1,102 @@
+[INFO] 2026-03-02 20:23:37,730 django.utils.autoreload -> Watching for file changes with StatReloader
+[INFO] 2026-03-02 20:24:25,640 django.utils.autoreload -> Watching for file changes with StatReloader
+[INFO] 2026-03-02 20:27:08,231 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:27:08,238 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:27:08,241 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:28:50,735 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:28:50,735 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:28:50,736 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:29:30,650 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:29:30,650 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:29:30,652 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:29:33,426 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:29:33,427 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:29:33,428 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:29:34,154 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:29:34,154 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:29:34,155 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:29:36,043 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:29:36,044 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:30:29,335 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:30:29,335 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:30:30,650 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:30:30,650 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:30:31,397 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:30:31,397 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:30:32,248 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:30:32,249 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:30:33,352 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:30:33,353 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:44:36,892 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:44:36,894 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:44:36,895 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:44:37,671 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:44:37,672 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:44:37,672 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:44:38,503 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:44:38,503 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:44:38,504 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 20:44:39,455 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 20:44:39,455 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 20:44:39,456 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:44:40,207 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:44:40,227 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:44:40,943 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:44:40,944 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:44:41,746 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:44:41,747 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 20:44:42,666 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 20:44:42,667 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:13:26,663 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:13:26,664 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:13:26,665 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:13:27,999 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:13:27,999 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:13:28,000 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:13:28,903 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:13:28,904 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:13:28,905 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:13:29,952 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:13:29,953 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:13:29,953 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:13:34,756 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:13:34,757 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:13:41,571 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:13:41,571 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:13:44,363 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:13:44,364 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:15:01,781 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:15:01,782 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:15:01,782 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:15:02,803 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:15:02,803 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:15:02,804 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:15:03,411 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:15:03,411 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:15:03,421 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:15:04,205 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:15:04,205 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:15:04,206 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:15:05,019 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:15:05,019 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:15:05,841 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:15:05,842 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:15:06,892 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:15:06,902 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:16:33,389 django.utils.autoreload -> Watching for file changes with StatReloader
+[INFO] 2026-03-02 21:16:50,547 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:16:50,547 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:16:50,548 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:16:51,474 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:16:51,475 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:16:51,475 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:16:52,568 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:16:52,575 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:16:52,576 django.request -> Too Many Requests: /login/
+[INFO] 2026-03-02 21:16:53,402 rate_limit_system -> abuse_event
+[INFO] 2026-03-02 21:16:53,403 rate_limit_system -> rate_limit_hit
+[WARNING] 2026-03-02 21:16:53,403 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:16:54,261 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:16:54,261 django.request -> Too Many Requests: /login/
+[WARNING] 2026-03-02 21:16:55,951 rate_limit_system -> cooldown_applied
+[WARNING] 2026-03-02 21:16:55,952 django.request -> Too Many Requests: /login/

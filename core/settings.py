@@ -129,6 +129,38 @@ CACHES = {
         }
     }
 }
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+
+    "formatters": {
+        "colored": {
+            "()": "colorlog.ColoredFormatter",
+            "format": "%(log_color)s[%(levelname)s] %(asctime)s %(name)s -> %(message)s",
+        },
+        "simple": {
+            "format": "[%(levelname)s] %(asctime)s %(name)s -> %(message)s",
+        },
+    },
+
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "colored",   #  colored here
+        },
+        "file": {
+            "class": "logging.FileHandler",
+            "filename": "app.log",
+            "formatter": "simple",    # file stays plain
+        },
+    },
+
+    "root": {
+        "handlers": ["console", "file"],
+        "level": "INFO",
+    },
+}
+
 
 # Redis configuration
 REDIS_HOST = "localhost"

@@ -1,15 +1,16 @@
-import time
 from .redis_client import redis_client
+from .logger import logger
 
 
 class AbuseEngine:
     """
-    Tracks and scores suspicious behavior.
+    Tracks and scores suspicious behavior over time.
     """
 
-    DECAY_WINDOW = 300  # seconds (5 min)
-    DECAY_AMOUNT = 1
+    # Abuse score decays automatically via Redis TTL
+    DECAY_WINDOW = 300  # seconds (5 minutes)
 
+    # How much each event contributes to abuse score
     EVENT_SCORES = {
         "rate_limit_hit": 2,
         "failed_login": 3,
@@ -24,10 +25,31 @@ class AbuseEngine:
 
         key = f"abuse_score:{identity}"
 
-        pipeline = redis_client.pipeline()
-        pipeline.incrby(key, score)
-        pipeline.expire(key, cls.DECAY_WINDOW)
-        pipeline.execute()
+        try:
+            pipeline = redis_client.pipeline()
+            pipeline.incrby(key, score)
+            pipeline.expire(key, cls.DECAY_WINDOW)
+            pipeline.execute()
+
+            logger.info(
+                "abuse_event",
+                extra={
+                    "identity": identity,
+                    "event": event,
+                    "score_added": score,
+                },
+            )
+
+        except Exception as e:
+            # Fail-open: abuse tracking should never break requests
+            logger.error(
+                "abuse_engine_error",
+                extra={
+                    "identity": identity,
+                    "event": event,
+                    "error": str(e),
+                },
+            )
 
     @classmethod
     def get_score(cls, identity):
