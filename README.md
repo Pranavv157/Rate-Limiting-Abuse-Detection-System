@@ -121,7 +121,7 @@ TTL is used extensively to avoid manual cleanup.
 
 ## 🚀 Future Improvements
 
-- Sliding window rate limiting
+
 - Trust score integration
 - Redis Lua scripts for atomic enforcement
 - Prometheus / Grafana metrics
